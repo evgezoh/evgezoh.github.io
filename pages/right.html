@@ -1,0 +1,53 @@
+<html>
+<head>
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/> 
+<link rel="stylesheet" href="../css/style-modal.css" rel="stylesheet">
+<title>Catalog</title>
+<meta charset="utf-8">
+<style>
+	 body
+    {
+        background-color: #000000;
+    }
+
+   #fon
+   {
+        height:100%; 
+        width:100%;
+        background-size: cover;
+        display: inline-block;
+   }
+</style>
+</head>
+<body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="../jquery-master-color/jquery.color.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<a class="btn btn-default btn-lg" href="../index.html" role="button" style=" background-color: rgba(255,255,255,0.01); position: fixed; right:10; top:10"><span class="glyphicon glyphicon-arrow-left" style="color:red"></span>
+<font id="back" face="Segoe print" color="yellow">Back</font></a>
+
+<div class="fon">
+<h1>Каталог</h1>
+</div>
+
+
+<script>
+
+var timer = setInterval(function(){
+
+    var r=Math.floor(Math.random() * (256));
+    var g=Math.floor(Math.random() * (256));
+    var b=Math.floor(Math.random() * (256));
+    var c='#' + r.toString(16) + g.toString(16) + b.toString(16);
+    $('#back').animate({color:c},1000);
+
+
+},2000);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,620 @@
+<html>
+<head>
+
+ <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  -->
+
+ <!--<script type="text/javascript" src="jquery.touchSwipe.min.js"></script> -->
+
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/> 
+ <link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+ <title>Ellada</title>
+ <meta charset="utf-8">
+
+ <style>
+
+    body
+    {
+        /*background-image: url("background.jpg");*/
+        background-color: #000000; /* #00BFFF;
+        /*background-repeat: no-repeat;*/
+        /*background-size: cover;
+        background-size: 100% 100%;
+        border-radius: 15px;
+        /*background-image: url("snow_1.jpg");*/
+    }
+   #fon
+   {
+        height:100%; 
+        width:100%;
+        /*background-image: url(background.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+   }
+
+   #fon1
+   {
+        height:100%; 
+        width:100%;
+        /*background-image: url(snow_1.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+   }
+
+   #fon2
+   {
+        height:70%; 
+        width:100%;
+        /*background-image: url(snow_2.jpg);*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline-block;
+   }
+
+   .vkladka_0
+   {
+   	        width: 50%;
+   	        height: 30%;
+            position:absolute; 
+            z-index:100;
+            margin-top: 3%;
+            margin-left: 3%;
+            background-image: url("logo.png");
+            background-repeat:  no-repeat;
+            background-size: 90% 90%;
+   
+   }
+  
+   .vkladka_1
+   {
+   	        /*background-color: rgba(220, 20, 60, 0.8);*/
+   	        width: 100%;
+   	        background-color: rgba(30, 144, 255, 0.78);
+
+            position:absolute; 
+            z-index:100;
+   }
+    .item{
+      background: #fff; /*333*/     
+      text-align: center;
+    
+  }
+  .img-responsive,
+  .thumbnail > img,
+  .thumbnail a > img,
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+ .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    margin: 0;
+    padding: 0 25px 25px 0;
+    text-align: right;
+  }
+  .carousel-control.left, .carousel-control.right {
+    background-image: none;
+  } 
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li > a:hover,
+.nav-pills > li.active > a:focus {
+	/*outline: none;
+	border: none;*/
+    background-color: rgba(200,8,100,0.01);
+    }
+ </style>
+
+</head>
+<body>
+
+ <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+ <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>-->
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+ <script src="jquery-master-color/jquery.color.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ <!--<script src="https://code.jquery.com/jquery.min.js"></script> -->
+
+
+<div id="about3" style="left:1%; bottom:1%; position: fixed; z-index:20">
+ <a id="but1" class="btn btn-default btn-lg" href="#fon" role="button" style=" background-color: rgba(255,255,255,0.01)">1</a>
+ <a id="but2" class="btn btn-default btn-lg" href="#fon1" role="button" style="background-color: rgba(255,255,255,0.01)">2</a>
+ <a id="but3" class="btn btn-default btn-lg" href="#fon2" role="button" style="background-color: rgba(255,255,255,0.01)">3</a>
+ </div>
+
+<div id="fon">
+
+<div id="meny" class="btn-group" style="position: fixed; right:1%; top:5%; z-index:20">
+  <div class="btn-group">
+    <a id="lb1" href="pages/left.php" class="btn btn-default btn-lg" style="background-color: rgb(0, 0, 100); border:none">
+    <span class="glyphicon glyphicon-align-left" style="color:red"></span><font color="yellow" face="Segoe print">
+    О компании</font></a>
+  </div>
+  <div class="btn-group">
+    <a id="lb2" href="pages/middle.html" class="btn btn-default btn-lg" style="background-color: rgb(0, 0, 100); border:none">
+    <span class="glyphicon glyphicon-phone" style="color:red"></span><font color="yellow" face="Segoe print">
+    Бизнес</font></a>
+  </div>
+  <div class="btn-group">
+    <a id="lb3" href="pages/catalog/catalog/steve-jobs/index.html" class="btn btn-default btn-lg" style="background-color: rgb(0, 0, 100); border:none">
+    <span class="glyphicon glyphicon-folder-open" style="color:red"></span><font color="yellow" face="Segoe print">
+    Каталог</font></a>
+  </div>
+</div>
+
+  <!-- Навигация -->
+ <!-- <ul class="nav nav-pills nav-justified" role="tablist"> 
+ <!-- <ul class="nav nav-tabs nav-justified" role="tablist">              btn-group-justified--> 
+  <!--  <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+    <font size="4" color="green" face="Segoe print">Главная</font>
+    </a></li> 
+    <li><a href="#about" aria-controls="about" role="tab" data-toggle="tab">
+    <font size="4" color="green" face="Segoe print">Пустая</font>
+    </a></li>
+    <li><a href="#third" aria-controls="third" role="tab" data-toggle="tab">
+    <font size="4" color="green" face="Segoe print">Третья</font>
+    </a></li>
+    <li><a href="#fourth" aria-controls="fourth" role="tab" data-toggle="tab">
+    <font size="4" color="green" face="Segoe print">Крайняя</font>
+    </a></li>
+  </ul>
+  <!-- Содержимое вкладок -->
+ <!-- <div class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active vkladka_0" id="home">
+</div>
+
+<div role="tabpanel" class="tab-pane fade vkladka_1" id="about" style="text-align:center">
+text<br>
+text
+</div>
+
+<div role="tabpanel" class="tab-pane fade vkladka_1" id="third" style="text-align:center">
+</div>
+      
+<div role="tabpanel" class="tab-pane fade vkladka_1" id="fourth" style="text-align:center">
+</div>
+
+  </div>  -->
+
+
+
+<style>
+	 .size1
+	 {
+          font-size: 200px;
+          font-family: "mv boli";
+          color:red;
+	 }
+</style>
+
+<div style="width:100%; height:10%">
+</div>
+
+<div style="width:90%; height:40%; margin-left:10%">
+<span class="size1">Armelle</span>
+</div>
+
+
+<div style="width:25%; height:40%; float:left; margin-left:7%; background-color:#000000">
+    <a data-toggle="modal" data-target="#myModal"><img src="img/news1.jpg" height="80%" width="100%"></a>
+    <font size="2" color="yellow">ARMELLE ОТКРЫВАЕТ РЫНОК КРАСОТЫ 
+Дорогие друзья! 
+Случилось то, чего мы все давно ждали: Armelle открывает рынок красоты с новой, </font>
+</div>
+
+
+
+<div style="width:25%; height:40%; float:left; margin-left:5.5%; background-color:#000000">
+    <a data-toggle="modal" data-target="#myModal1"><img src="img/news2.jpg" height="80%" width="100%"></a>
+    <font size="2" color="yellow">!!!ВНИМАНИЕ!!! ПРЕДНОВОГОДНЯЯ АКЦИЯ!!!
+При покупке любых двух флаконов скидка 40%. Так же подарки и скидки при покупке любого аромата из</font>
+</div>
+
+
+
+<div style="width:25%; height:40%; float:left; margin-left:5.5%; background-color:#000000">
+    <a data-toggle="modal" data-target="#myModal2"><img src="img/news3.jpg" height="80%" width="100%"></a>
+    <font size="2" color="yellow">НОВОЕ НАПРАВЛЕНИЕ И НОВЫЙ ПРОДУКТ! 
+11 июля, 2016 
+Вся продукция Armelle так или иначе способствует хорошему здоровью и настроению.</font>
+</div>
+
+
+
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+</div>
+<div class="modal-body">
+   <img class="is-image" title="Armelle" src="img/news1.jpg" alt="Armelle" width="100%" height="50%">
+       <font size="2">ARMELLE ОТКРЫВАЕТ РЫНОК КРАСОТЫ 
+
+Дорогие друзья! 
+
+Случилось то, чего мы все давно ждали: Armelle открывает рынок красоты с новой, потрясающей линейкой продукции! Наш ассортимент пополняется сразу несколькими новинками: 
+
+— Ночной и дневной кремы; 
+— Энзимный пилинг-скраб; 
+— Сыворотка для лица с гиалуроновой кислотой; 
+— Крем для рук. 
+
+Новинки разработаны с учётом свежих открытий и последних тенденций в области ухода за кожей. Название «Berry Mix» (ягодный микс) мы выбрали потому, что наши косметические средства, помимо самых современных и признанных ингредиентов, содержат в составе натуральные экстракты северных ягод — клюквы, ежевики, брусники и морошки. Эти ягоды известны содержанием огромного числа питательных веществ. 
+
+В новой линейке реализован комплексный подход по уходу за кожей, она универсальна, обладает мягким действием и подходит для всех типов кожи и возрастов. 
+
+Мы уверены, что с новой продукцией вы станете привлекательными как никогда, и в полной мере насладитесь здоровьем и красотой вашей кожи! 
+
+В ближайшее время пробники появятся в интернет-магазине Armelle, так что вы сможете испытать новые продукты вместе с вашими друзьями и знакомыми — и подготовиться к взрыву товарооборота и ваших чеков: вся линия BERRY MIX поступит в продажу до нового года!</font>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="myModal1" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+</div>
+<div class="modal-body">
+   <img class="is-image" title="Armelle" src="img/news2.jpg" alt="Armelle" width="100%" height="50%">
+       <font size="2">!!!ВНИМАНИЕ!!! ПРЕДНОВОГОДНЯЯ АКЦИЯ!!!
+При покупке любых двух флаконов скидка 40%. Так же подарки и скидки при покупке любого аромата из линии Emploi (селективная, нишевая парфюмерия).</font>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="myModal2" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+</div>
+<div class="modal-body">
+   <img class="is-image" title="Armelle" src="img/news3.jpg" alt="Armelle" width="100%" height="50%">
+       <font size="2">НОВОЕ НАПРАВЛЕНИЕ И НОВЫЙ ПРОДУКТ! 
+11 июля, 2016 
+Вся продукция Armelle так или иначе способствует хорошему здоровью и настроению. Прекрасные ароматы из коллекций Classic и Emploi дарят эмоции и восхищают. А наши гели для душа, бальзамы, шампунь и зубная паста отличаются высоким качеством и не содержат опасных для здоровья дешёвых ингредиентов. 
+
+Мы рады сообщить, что Armelle открывает новое направление — «Здоровье». И первым продуктом в линейке станет Vita Energy — полезный витаминизированный растворимый напиток на основе сока лимона. Он содержит комплекс натуральных экстрактов и включает активные вещества, позволяющие противостоять стрессу, продлить молодость, сохранить красоту и хорошее самочувствие. 
+
+Vita Energy содержит натуральный сок лимона, экстракты облепихи и куркумы, янтарную кислоту, таурин, коэнзим Q10, инулин и фруктозу. Эти компоненты обладают целым рядом полезных свойств: 
+
+Снижают стресс, повышают энергию и настроение; 
+Усиливают иммунитет; 
+Улучшают память и концентрацию; 
+Борются со свободными радикалами и воспалительными процессами, защищают от развития онкологических заболеваний; 
+Замедляют процессы старения; 
+Улучшают пищеварение и обмен веществ, повышают качество крови; 
+Уменьшают чувство голода и способствуют снижению веса;
+Поддерживают эластичность кожи. 
+
+
+Этот продукт предназначен для людей, ведущих активный образ жизни, заботящихся о своем здоровье, предпочитающих натуральные, качественные напитки. 
+
+Vita Energy уже доступен для заказа в нашем интернет-магазине. 
+
+Желаем освежающего лета и прекрасного здоровья!</font>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+<div id="fon1">
+
+<div id="about2"></div> 
+
+
+ <div id="myCarousel" class="carousel slide" data-interval="5000" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+    </ol>   
+    <div class="carousel-inner">
+
+
+      <div class="active item">
+        <a href="#win5"><img src="img/100.png"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+
+      <div class="item">
+      <a href="#win6"><img src="img/101.jpg"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+      <a href="#win7"><img src="img/102.jpg"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+      <a href="#win8"><img src="img/103.jpg"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+      <a href="#win9"><img src="img/104.jpg"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+      <a href="#win10"><img src="img/105.jpg"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+      <a href="#win10"><img src="img/106.png"></a>
+        <div class="carousel-caption">
+        </div>
+      </div>
+      </div>
+
+
+    <!-- data-slide="prev" -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <!-- data-slide="next" -->
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+<div id="fon2">
+
+<div id="about1"></div> 
+
+
+<div style="width:90%; height:30%; margin-left:5%; margin-top:1%; border-radius:15px; border: 1px dashed gray">
+
+<div align="center" style="height:50%">
+<font id="zvonky" size="7" color="#000000" face="footlight mt light">Звонки, What`s App, Viber:</font>
+</div>
+
+<div style="width:40%; height:50%; margin-left:30%">
+ <div style="float:left; margin-left:5%; width:6%;"><font id="a0" size="6" color="#000000" face="footlight mt light">+</font></div>
+ <div style="float:left; width:6%;"><font id="a1" size="6" color="#000000" face="footlight mt light">7</font></div>
+ <div style="float:left; width:6%;"><font id="a2" size="6" color="#000000" face="footlight mt light">(</font></div>
+ <div style="float:left; width:6%;"><font id="a3" size="6" color="#000000" face="footlight mt light">9</font></div>
+ <div style="float:left; width:6%;"><font id="a4" size="6" color="#000000" face="footlight mt light">5</font></div>
+ <div style="float:left; width:6%;"><font id="a5" size="6" color="#000000" face="footlight mt light">3</font></div>
+ <div style="float:left; width:8%;"><font id="a6" size="6" color="#000000" face="footlight mt light">)</font></div>
+ <div style="float:left; width:6%;"><font id="a7" size="6" color="#000000" face="footlight mt light">0</font></div>
+ <div style="float:left; width:6%;"><font id="a8" size="6" color="#000000" face="footlight mt light">9</font></div>
+ <div style="float:left; width:8%;"><font id="a9" size="6" color="#000000" face="footlight mt light">2</font></div>
+ <div style="float:left; width:6%;"><font id="a10" size="6" color="#000000" face="footlight mt light">7</font></div>
+ <div style="float:left; width:8%;"><font id="a11" size="6" color="#000000" face="footlight mt light">3</font></div>
+ <div style="float:left; width:6%;"><font id="a12" size="6" color="#000000" face="footlight mt light">7</font></div>
+ <div style="float:left; width:6%;"><font id="a13" size="6" color="#000000" face="footlight mt light">5</font></div>
+</div>
+
+</div>
+
+   <!--
+   <div align="center" style="height:10%; width:100%; float:left">
+<font color="red" face="footlight mt light" size="5">Email Address:</font>
+<font color="yellow" face="footlight mt light" size="5">elladapapb@gmail.com</font>
+</div>
+  
+  <div align="center" style="height:10%; width:100%; float:left">
+     <font color="red" face="footlight mt light" size="5">
+    Личный кабинет на сайте компании:
+     <a href="https://armelle.world/70031750" style="text-decoration:none"><font color="yellow">Armelle</font></a><br></font>
+  </div>
+
+   
+  <div align="center" style="width:100%; height:10%; float:left">
+   <font color="red" face="footlight mt light" size="5">В социальных сетях<br></font>
+  </div>
+
+  <div style="margin-left:45%; width:40px; height:10%; float:left">
+     <a href="https://vk.com/id184678365"><img src="img/vk.png" height="100%" width="100%"></a>
+  </div>
+  <div style="width:40px; height:10%; margin-left:5px; float:left">
+     <a href="https://vk.com/id371335072"><img src="img/vk.png" height="100%" width="100%"></a>
+  </div>  
+
+ <div style="height:10%; width:100%; float:left; margin-top:5%" align="center">
+    2016-2016
+ </div>
+ -->
+
+<div style="width:100%; height:30%; margin-top:3%">
+ <div style="width:30%; height:100%; margin-left:15%; float:left; border-radius:15px; border: 2px solid gray">
+     <div align="center"><font size="4" color="red" face="Segoe print">Email Address</font></div><br>
+     <div align="center"><font size="5" color="yellow" face="Segoe print">elladapapb<wbr>@gmail.<wbr>com</font></div>
+           
+   
+</div>
+
+<div style="width:5%; height:100%; margin-left:2.5%; float:left">
+ <a style="" href="https://vk.com/id184678365"><img src="img/vk.png" height="50%" width="100%"></a><br>
+ <a href="https://vk.com/id371335072"><img src="img/vk.png" height="50%" width="100%"></a>
+</div>
+
+ <div style="width:30%; height:100%; margin-left:2.5%; float:left; border-radius:15px; border: 2px solid gray">
+  <div align="center"><font size="4" color="red" face="Segoe print">Личный кабинет на сайте компании</font></div><br>
+<div align="center">
+<a href="https://armelle.world/70031750" style="text-decoration:none"><font color="yellow" face="Segoe print" size="5">Armelle</font></a>
+</div>
+   
+</div>
+
+</div>
+
+<div align="center" style="height:23%; width:70%; margin-left:15%; margin-top: 3%; border-radius:15px">
+  
+</div>
+
+<div align="center" style="magin-bottom:0%">
+ <font  color="white">2016</font>
+</div>
+
+
+<script>
+
+/*$(document).ready(function() {
+ 
+$('a[href^="#"]').click(function(){
+        var el = $(this).attr('href');
+        $('body').animate({
+            scrollTop: $(el).offset().top}, 2000);
+        return false; 
+});
+    
+});*/
+
+ $(document).ready(function(){
+    $("#about3").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+
+var timerId = setInterval(function() {
+	document.getElementById('but1').style.fontFamily = "Segoe print";
+	document.getElementById('but2').style.fontFamily = "Segoe print";
+	document.getElementById('but3').style.fontFamily = "Segoe print";
+	document.getElementById('but1').style.color = "yellow";
+	document.getElementById('but2').style.color = "yellow";
+	document.getElementById('but3').style.color = "yellow";
+
+  if(window.pageYOffset < document.documentElement.clientHeight/6)
+  {
+     //alert("Мы в начале");
+     //alert(k);
+     //document.getElementById('but1').style.backgroundColor = "rgba(255,0,0,1)"
+     //document.getElementById('but1').style. = "false";
+     document.getElementById('but1').text = "Here";
+     document.getElementById('but1').style.color  = "red";
+     document.getElementById('but2').text = "2";
+     //$("#meny").fadeIn(1000);
+
+  }
+  else 
+  	 if(window.pageYOffset < document.documentElement.clientHeight/2) 
+     {
+  	    //document.getElementById('but1').style.backgroundColor = "rgba(255,255,255,0.001)";
+  	    document.getElementById('but1').text = "1";
+  	    document.getElementById('but2').text = "Here";
+  	    document.getElementById('but2').style.color  = "red";
+  	    document.getElementById('but3').text = "3";
+  	    //$("#meny").fadeOut(1000, function() {  }); 
+     }
+     else 
+       	{
+  	          document.getElementById('but2').text = "2";
+  	          document.getElementById('but3').text = "Here";
+  	          document.getElementById('but3').style.color  = "red";
+  	          //$("#meny").fadeIn(1000);
+  	          open();
+
+       	}
+}, 100);
+
+function open()
+{
+      $('#zvonky').animate({ color:"rgba(255,0,0,1)"},2000);
+
+      $('#a0').animate({color:"rgba(255,255,0,1)"},500);
+      $('#a1').animate({color:"rgba(255,255,0,1)"},1000);
+      $('#a2').animate({color:"rgba(255,255,0,1)"},1500);
+      $('#a3').animate({color:"rgba(255,255,0,1)"},2000);
+      $('#a4').animate({color:"rgba(255,255,0,1)"},2500);
+      $('#a5').animate({color:"rgba(255,255,0,1)"},3000);
+      $('#a6').animate({color:"rgba(255,255,0,1)"},3500);
+      $('#a7').animate({color:"rgba(255,255,0,1)"},4000);
+      $('#a8').animate({color:"rgba(255,255,0,1)"},4500);
+      $('#a9').animate({color:"rgba(255,255,0,1)"},5000);
+      $('#a10').animate({color:"rgba(255,255,0,1)"},5500);
+      $('#a11').animate({color:"rgba(255,255,0,1)"},6000);
+      $('#a12').animate({color:"rgba(255,255,0,1)"},6500);
+      $('#a13').animate({color:"rgba(255,255,0,1)"},7000);
+}
+
+var timemenu = setInterval(function(){
+
+ if (window.pageYOffset > document.documentElement.clientHeight/3-50)
+ {
+        $('#lb1').animate({backgroundColor:"rgba(0, 0, 100, 0);"},500);
+        $('#lb2').animate({backgroundColor:"rgba(0, 0, 100, 0);"},500);
+        $('#lb3').animate({backgroundColor:"rgba(0, 0, 100, 0);"},500);
+ }
+ else
+ {
+ 	    $('#lb1').animate({backgroundColor:"rgba(0, 0, 100, 1);"},500);
+ 	    $('#lb2').animate({backgroundColor:"rgba(0, 0, 100, 1);"},500);
+ 	    $('#lb3').animate({backgroundColor:"rgba(0, 0, 100, 1);"},500);
+ }
+
+},700);
+
+//alert(document.documentElement.clientHeight/3);
+/*
+$(function ()
+{
+    $("#q").fadeOut(1000, function () 
+                          {
+                             $("#q").text("NEW TEXT").fadeIn(1000)
+                          }
+                    );
+});
+
+$("#but1").fadeOut(1000, function() { $("#but1").text("1").fadeIn(1000) }); */
+
+//$(function(){$('#lb').animate({backgroundColor:"rgba(255,0,0,1)"},1000);});
+
+//$('#lb').animate({backgroundColor:"rgba(255,0,0,0)"},1000);
+
+
+
+
+</script>
+
+
+
+
+
+</html>
