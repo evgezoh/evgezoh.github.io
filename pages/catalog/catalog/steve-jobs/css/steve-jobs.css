@@ -165,8 +165,8 @@ body, ul, table, form{
 .sj-book .p1,
 .sj-book .p2,
 .sj-book .p3, 
-.sj-book .p64, 
-.sj-book .p65{  /* dverfvgwgerfgvwe4tgvrtfgvrtfgrtgvrtgr */
+.sj-book .p66, 
+.sj-book .p67{  /* dverfvgwgerfgvwe4tgvrtfgvrtfgrtgvrtgr */
 	background-color:white;
 	background-image:url(../pics/book-covers.jpg) !important;   /* advesfvervbrgvbrgvefjnvkervnelkfnvekfnvefgvenfgvwenfrgvenglve */
 }
@@ -235,11 +235,11 @@ body, ul, table, form{
 	background-position:-1920px 0 !important;
 }
 
-.sj-book .p64{
+.sj-book .p66{
 	background-position:-960px 0 !important;
 }
 
-.sj-book .p65{
+.sj-book .p67{
 	background-position:-1440px 0 !important;
 }
 
