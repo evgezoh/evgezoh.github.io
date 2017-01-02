@@ -599,6 +599,17 @@ function open()
       $('#a13').animate({color:"rgba(255,255,255,1)"},7000);
 }
 
+var zvonkyTimer = setInterval(function(){
+    
+    var r=Math.floor(Math.random() * (256));
+    var g=Math.floor(Math.random() * (256));
+    var b=Math.floor(Math.random() * (256));
+    var c='#' + r.toString(16) + g.toString(16) + b.toString(16);
+    $('zvonky').animate({color:c},2000);
+
+
+}, 2000);
+
 var timemenu = setInterval(function(){
 
  if (window.pageYOffset > document.documentElement.clientHeight/3-50)
