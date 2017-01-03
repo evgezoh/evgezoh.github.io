@@ -2,7 +2,7 @@ ul#navigation {
     position: relative;
     margin: 0px;
     padding: 0px;
-    bottom: 15%;
+    bottom: 0%;
     left: 0px;
     list-style: none;
     z-index:9999;
@@ -14,7 +14,7 @@ ul#navigation li p {
     display: block;
     margin-left: -2px;
     width: 500px;
-    height: 50px;    
+    height: 50%;    
     background-color:#CFCFCF;
     background-repeat:no-repeat;
     background-position:center center;
