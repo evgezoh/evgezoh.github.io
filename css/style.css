@@ -1,8 +1,8 @@
 ul#navigation {
-    position: fixed;
+    position: absolute;
     margin: 0px;
     padding: 0px;
-    top: 100px;
+    bottom: 100px;
     left: 0px;
     list-style: none;
     z-index:9999;
