@@ -15,10 +15,10 @@ ul#navigation li p {
     margin-left: -1510px;
     width: 500px;
     height: 100%;    
-    background-color:#CFCFCF;
+    background-color:rgba(255,0,0,0.7);
     background-repeat:no-repeat;
     background-position:center center;
-    border:1px solid #AFAFAF;
+    border:1px solid #00AA00;
     -moz-border-radius:0px 10px 10px 0px;
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-top-right-radius: 10px;
