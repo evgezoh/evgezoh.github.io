@@ -12,13 +12,13 @@ ul#navigation li {
 }
 ul#navigation li p {
     display: block;
-    margin-left: -1510px;
+    margin-left: -1475px;
     width: 500px;
     height: 100%;    
     background-color:rgba(255,0,0,0.7);
     background-repeat:no-repeat;
     background-position:center center;
-    border:1px solid #00AA00;
+    border:1px solid #000000;
     -moz-border-radius:0px 10px 10px 0px;
     -webkit-border-bottom-right-radius: 10px;
     -webkit-border-top-right-radius: 10px;
