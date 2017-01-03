@@ -2,7 +2,7 @@ ul#navigation {
     position: relative;
     margin: 0px;
     padding: 0px;
-    bottom: 100px;
+    bottom: 20%;
     left: 0px;
     list-style: none;
     z-index:9999;
