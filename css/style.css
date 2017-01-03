@@ -25,7 +25,7 @@ ul#navigation li p {
     -khtml-border-bottom-right-radius: 10px;
     -khtml-border-top-right-radius: 10px;
 
-    opacity: 0.0;
+    opacity: 0.6;
 }
 ul#navigation .home p{
     background-image: url(../images/home.png);
