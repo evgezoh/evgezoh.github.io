@@ -9,6 +9,7 @@
 
  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/> 
  <link rel="stylesheet" href="css/style-modal.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
  <title>Ellada</title>
  <meta charset="utf-8">
 
@@ -440,6 +441,9 @@ Vita Energy уже доступен для заказа в нашем интер
 
 <div style="height:40%">
 <div align="center" style="height:100%">
+<ul id="navigation">
+    <li class="home"><p></p></li>
+</ul>
  <a href="https://vk.com"><img src="img/mail.png" height="100%" width="15%"></a>
  <a href="https://vk.com"><img src="img/vk.png" height="100%" width="15%"></a>
  <a href="https://vk.com"><img src="img/instagram.png" height="100%" width="15%"></a>
@@ -584,6 +588,19 @@ $("#but1").fadeOut(1000, function() { $("#but1").text("1").fadeIn(1000) }); */
 //$(function(){$('#lb').animate({backgroundColor:"rgba(255,0,0,1)"},1000);});
 
 //$('#lb').animate({backgroundColor:"rgba(255,0,0,0)"},1000);
+
+  $(function() {
+                $('#navigation p').stop().animate({'marginLeft':'-490px'},0);
+
+                $('#navigation > li').hover(
+                    function () {
+                        $('p',$(this)).stop().animate({'marginLeft':'-2px'},1000);
+                    },
+                    function () {
+                        $('p',$(this)).stop().animate({'marginLeft':'-490px'},1000);
+                    }
+                );
+            });
 
 
 </script>
