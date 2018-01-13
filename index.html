@@ -57,8 +57,8 @@
 
    .vkladka_0
    {
-   	        width: 50%;
-   	        height: 30%;
+            width: 50%;
+            height: 30%;
             position:absolute; 
             z-index:100;
             margin-top: 3%;
@@ -71,9 +71,9 @@
   
    .vkladka_1
    {
-   	        /*background-color: rgba(220, 20, 60, 0.8);*/
-   	        width: 100%;
-   	        background-color: rgba(30, 144, 255, 0.78);
+            /*background-color: rgba(220, 20, 60, 0.8);*/
+            width: 100%;
+            background-color: rgba(30, 144, 255, 0.78);
 
             position:absolute; 
             z-index:100;
@@ -110,8 +110,8 @@
 .nav-pills > li.active > a:hover, 
 .nav-pills > li > a:hover,
 .nav-pills > li.active > a:focus {
-	/*outline: none;
-	border: none;*/
+  /*outline: none;
+  border: none;*/
     background-color: rgba(200,8,100,0.01);
     }
  </style>
@@ -198,12 +198,12 @@ text
 
  <!--
 <style>
-	 .size1
-	 {
+   .size1
+   {
           font-size: 200px;
           font-family: "mv boli";
           color:red;
-	 }
+   }
 </style>
  -->
 
@@ -221,17 +221,13 @@ text
 
 
 <div style="width:20%; height:10%; float:left; margin-left:25%; background-color:rgba(255,255,255,0)">
-<div style="height:20%">
-</div>
-    <a href="" data-toggle="modal" data-target="#myModal"><img src="img/oge.png" height="80%" width="100%"></a>
+    <a href="" data-toggle="modal" data-target="#myModal" style="outline: none"><img src="img/oge.png" height="80%" width="100%"></a>
 </div>
 
 
 
 <div style="width:20%; height:10%; float:left; margin-left:10%; background-color:rgba(255,255,255,0)">
-<div style="height:20%">
-</div>
-    <a href="" data-toggle="modal" data-target="#myModal1"><img src="img/ege.png" height="80%" width="100%"></a>
+    <a href="" data-toggle="modal" data-target="#myModal1" style="outline: none"><img src="img/ege.png" height="80%" width="100%"></a>
 </div>
 
 
@@ -436,12 +432,12 @@ $('a[href^="#"]').click(function(){
 });
 
 var timerId = setInterval(function() {
-	document.getElementById('but1').style.fontFamily = "Segoe print";
-	document.getElementById('but2').style.fontFamily = "Segoe print";
-	document.getElementById('but3').style.fontFamily = "Segoe print";
-	document.getElementById('but1').style.color = "gray";
-	document.getElementById('but2').style.color = "gray";
-	document.getElementById('but3').style.color = "gray";
+  document.getElementById('but1').style.fontFamily = "Segoe print";
+  document.getElementById('but2').style.fontFamily = "Segoe print";
+  document.getElementById('but3').style.fontFamily = "Segoe print";
+  document.getElementById('but1').style.color = "gray";
+  document.getElementById('but2').style.color = "gray";
+  document.getElementById('but3').style.color = "gray";
 
   if(window.pageYOffset < document.documentElement.clientHeight/6)
   {
@@ -456,24 +452,24 @@ var timerId = setInterval(function() {
 
   }
   else 
-  	 if(window.pageYOffset < document.documentElement.clientHeight/2) 
+     if(window.pageYOffset < document.documentElement.clientHeight/2) 
      {
-  	    //document.getElementById('but1').style.backgroundColor = "rgba(255,255,255,0.001)";
-  	    document.getElementById('but1').text = "1";
-  	    document.getElementById('but2').text = "Here";
-  	    document.getElementById('but2').style.color  = "#FF00FF";
-  	    document.getElementById('but3').text = "3";
-  	    //$("#meny").fadeOut(1000, function() {  }); 
+        //document.getElementById('but1').style.backgroundColor = "rgba(255,255,255,0.001)";
+        document.getElementById('but1').text = "1";
+        document.getElementById('but2').text = "Here";
+        document.getElementById('but2').style.color  = "#FF00FF";
+        document.getElementById('but3').text = "3";
+        //$("#meny").fadeOut(1000, function() {  }); 
      }
      else 
-       	{
-  	          document.getElementById('but2').text = "2";
-  	          document.getElementById('but3').text = "Here";
-  	          document.getElementById('but3').style.color  = "#FF00FF";
-  	          //$("#meny").fadeIn(1000);
-  	          open();
+        {
+              document.getElementById('but2').text = "2";
+              document.getElementById('but3').text = "Here";
+              document.getElementById('but3').style.color  = "#FF00FF";
+              //$("#meny").fadeIn(1000);
+              open();
 
-       	}
+        }
 }, 100);
 
 function open()
@@ -519,9 +515,9 @@ var timemenu = setInterval(function(){
  }
  else
  {
- 	    $('#lb1').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
- 	    $('#lb2').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
- 	    $('#lb3').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
+      $('#lb1').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
+      $('#lb2').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
+      $('#lb3').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
       $('#lb4').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
       $('#lb5').animate({backgroundColor:"rgba(50, 0, 50, 1);"},500);
  }
